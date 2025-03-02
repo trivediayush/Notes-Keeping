@@ -1,4 +1,4 @@
-# Manual Testing Plan for Notes Application with CI/CD
+# Manual Testing Plan for Notes Application
 
 ## 1️⃣ Environment Setup
 
