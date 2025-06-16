@@ -33,7 +33,7 @@ pipeline {
 
         stage('Pushing Image to DockerHub...') {
             steps {
-                sh 'sudo docker push $IMAGE_NAME:latest'
+                sh 'echo $DOCKER_PASS | sudo -S docker push $IMAGE_NAME:latest'
             }
         }
     }
