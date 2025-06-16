@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    triggers {
+        githubPush()
+    }
+
     stages {
         stage('Code Cloning...') {
             steps {
@@ -10,13 +14,13 @@ pipeline {
 
         stage('Building Image...') {
             steps {
-                sh "docker build -t mydemoNotes ."
+                sh 'docker build -t mydemoNotes .'
             }
         }
-      
+
         stage('Pushing Image to DockerHub...') {
             steps {
-                sh "docker images"
+                sh 'docker images'
             }
         }
     }
