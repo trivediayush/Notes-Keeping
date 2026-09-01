@@ -1,0 +1,8 @@
+- pipeline: deploy-to-prod
+  name: Deploy to Prod
+  refs:
+  - refs/heads/master
+  fail_on_prepare_env_warning: true
+  resources: NANO
+  events:
+  - type: WEBHOOK
