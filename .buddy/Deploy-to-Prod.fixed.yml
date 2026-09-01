@@ -6,3 +6,11 @@
   resources: NANO
   events:
   - type: WEBHOOK
+  actions:
+  - action: Clear cache
+    type: CLEAR_CACHE
+    cache_types:
+    - DOCKER
+    - FILE_SYSTEM
+    - SERVICES
+    - ADDITIONAL
