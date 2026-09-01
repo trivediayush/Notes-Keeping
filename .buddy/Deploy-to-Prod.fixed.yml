@@ -9,6 +9,7 @@
   actions:
   - action: Clear cache
     type: CLEAR_CACHE
+    disabled: true
     cache_types:
     - DOCKER
     - FILE_SYSTEM
